@@ -1,0 +1,10 @@
+{
+  "jobId": "jwst-demo-failed",
+  "status": "Failed",
+  "startedAt": "2025-02-01T12:05:20Z",
+  "updatedAt": "2025-02-01T12:06:44Z",
+  "logs": "\u001b[33m[12:05:21]\u001b[0m Validating inputs...\n\u001b[31m[12:06:44]\u001b[0m Background subtraction diverged: aperture radius too small.",
+  "error": "Background subtraction diverged",
+  "artifacts": [],
+  "public": false
+}

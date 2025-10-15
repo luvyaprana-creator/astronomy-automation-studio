@@ -1,0 +1,25 @@
+{
+  "observation": {
+    "project": "2019.1.01234.S",
+    "instrument": "ALMA",
+    "lines": "CO(3-2)",
+    "spw": "0,1,2,3"
+  },
+  "pipeline": {
+    "name": "alma_casa_moments",
+    "version": "6.5.1",
+    "executor": "casa",
+    "stages": ["importasdm", "tclean", "immoments", "exportfits"]
+  },
+  "parameters": {
+    "mask_threshold_sigma": 3.5,
+    "moments": [0, 1, 2],
+    "spectral_range_kms": "-150 150"
+  },
+  "artifacts": {
+    "moment0": "mock-data/alma/moment0.fits",
+    "quicklook_png": "mock-data/alma/quicklook.png",
+    "casa_log": "mock-data/alma/casa.log"
+  },
+  "generated_at": "2025-03-02T18:47:57Z"
+}

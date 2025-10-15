@@ -1,0 +1,38 @@
+{
+  "jobId": "eso-demo-success",
+  "status": "Succeeded",
+  "startedAt": "2025-01-12T04:15:00Z",
+  "updatedAt": "2025-01-12T04:21:35Z",
+  "completedAt": "2025-01-12T04:21:35Z",
+  "logs": "\u001b[34m[04:15:01]\u001b[0m Fetching ESO Phase 3 spectra...\n\u001b[32m[04:17:42]\u001b[0m Continuum normalization and telluric masking completed.\n\u001b[32m[04:20:18]\u001b[0m Stellar parameters solved via SME grid search.",
+  "artifacts": [
+    {
+      "name": "parameters.csv",
+      "url": "mock-data/eso/parameters.csv",
+      "size": 16384,
+      "type": "text/csv"
+    },
+    {
+      "name": "plot.png",
+      "url": "mock-data/eso/plot.png",
+      "size": 125678,
+      "type": "image/png"
+    },
+    {
+      "name": "methods.html",
+      "url": "mock-data/eso/methods.html",
+      "size": 9216,
+      "type": "text/html"
+    }
+  ],
+  "public": true,
+  "report": {
+    "summary": "Derived Teff=4803±45 K, logg=4.55 dex, [Fe/H]=-0.09 for LHS 1140.",
+    "metrics": {
+      "teff": 4803,
+      "logg": 4.55,
+      "feh": -0.09
+    }
+  },
+  "summary": "ESO VLT spectrum analysis yields refined stellar parameters for LHS 1140."
+}

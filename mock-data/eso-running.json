@@ -1,0 +1,9 @@
+{
+  "jobId": "eso-demo-running",
+  "status": "Running",
+  "startedAt": "2025-01-12T04:15:00Z",
+  "updatedAt": "2025-01-12T04:18:12Z",
+  "logs": "[04:15:01] Fetching ESO Phase 3 spectra...\n[04:16:20] Applying barycentric correction...\n[04:18:12] Running spectral fitting iterations...",
+  "artifacts": [],
+  "public": false
+}

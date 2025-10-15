@@ -1,0 +1,7 @@
+SIMPLE  =                    T / Dummy FITS placeholder
+BITPIX  =                  -32
+NAXIS   =                    3
+NAXIS1  =                  128
+NAXIS2  =                  128
+NAXIS3  =                   16
+END

@@ -1,0 +1,15 @@
+{
+  "jobId": "jwst-demo-success",
+  "generatedAt": "2025-02-01T12:11:51Z",
+  "inputs": {
+    "object": "NGC 3324",
+    "filters": ["F090W", "F200W"],
+    "cutoutArcsec": 60,
+    "apertureRadius": 3.2
+  },
+  "artifacts": [
+    {"name": "preview.png", "checksum": "sha256-96aa9a4c"},
+    {"name": "catalog.csv", "checksum": "sha256-63cb21cc"},
+    {"name": "report.html", "checksum": "sha256-a0f4c5e2"}
+  ]
+}

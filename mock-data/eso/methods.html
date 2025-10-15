@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ESO VLT Methods Report</title>
+</head>
+<body>
+  <h1>ESO VLT Spectra → Stellar Parameters</h1>
+  <p>Processing executed with <strong>vlt_spectral_params</strong> pipeline version 1.13.2 using SME.</p>
+  <h2>Workflow</h2>
+  <ol>
+    <li>Continuum normalization with cubic spline (order 3)</li>
+    <li>Telluric masking: ESO ATRAN mask set 2024-11</li>
+    <li>SME grid search across PHOENIX 2023 library</li>
+    <li>Posterior sampling (emcee, 48 walkers, 400 steps)</li>
+  </ol>
+  <h2>Results</h2>
+  <ul>
+    <li>Effective temperature: 4803 ± 45 K</li>
+    <li>Surface gravity: log g = 4.55 ± 0.07</li>
+    <li>Metallicity: [Fe/H] = -0.09 ± 0.03</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "jobId": "eso-demo-failed",
+  "status": "Failed",
+  "startedAt": "2025-01-12T04:15:00Z",
+  "updatedAt": "2025-01-12T04:17:02Z",
+  "logs": "\u001b[33m[04:15:34]\u001b[0m Normalizing spectrum...\n\u001b[31m[04:17:02]\u001b[0m SME solver did not converge within tolerance.",
+  "error": "SME solver did not converge",
+  "artifacts": [],
+  "public": false
+}

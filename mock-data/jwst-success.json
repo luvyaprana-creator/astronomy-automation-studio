@@ -1,0 +1,44 @@
+{
+  "jobId": "jwst-demo-success",
+  "status": "Succeeded",
+  "startedAt": "2025-02-01T12:05:20Z",
+  "updatedAt": "2025-02-01T12:11:52Z",
+  "completedAt": "2025-02-01T12:11:52Z",
+  "logs": "\u001b[34m[12:05:21]\u001b[0m Hydrating reference files...\n\u001b[32m[12:06:03]\u001b[0m Drizzling mosaics for filters [F090W,F200W]\n\u001b[32m[12:09:48]\u001b[0m Photutils aperture photometry finished.\n\u001b[32m[12:11:10]\u001b[0m Manifest + report assembled.",
+  "artifacts": [
+    {
+      "name": "preview.png",
+      "url": "mock-data/jwst/preview.png",
+      "size": 184532,
+      "type": "image/png"
+    },
+    {
+      "name": "catalog.csv",
+      "url": "mock-data/jwst/catalog.csv",
+      "size": 24576,
+      "type": "text/csv"
+    },
+    {
+      "name": "report.html",
+      "url": "mock-data/jwst/report.html",
+      "size": 17920,
+      "type": "text/html"
+    },
+    {
+      "name": "manifest.json",
+      "url": "mock-data/jwst/manifest.json",
+      "size": 4096,
+      "type": "application/json"
+    }
+  ],
+  "public": true,
+  "report": {
+    "summary": "NGC 3324 composite ready for release. Median SNR 32.4 across apertures.",
+    "metrics": {
+      "snr": 32.4,
+      "nSources": 182,
+      "zeropoint": 25.18
+    }
+  },
+  "summary": "JWST NIRCam mosaic for NGC 3324 with calibrated photometry and release-ready manifest."
+}

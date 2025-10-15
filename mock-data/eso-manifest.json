@@ -1,0 +1,25 @@
+{
+  "observation": {
+    "program": "0102.C-0588",
+    "instrument": "VLT ESPRESSO",
+    "target": "LHS 1140",
+    "wavelength_range": "3800-7800"
+  },
+  "pipeline": {
+    "name": "vlt_spectral_params",
+    "version": "1.13.2",
+    "executor": "prefect",
+    "stages": ["fetch_phase3", "continuum_normalization", "telluric_masking", "sme_grid"]
+  },
+  "parameters": {
+    "grid": "PHOENIX",
+    "smoothing": 3,
+    "vsini_prior": "3.0±0.5 km/s"
+  },
+  "artifacts": {
+    "parameters_csv": "mock-data/eso/parameters.csv",
+    "plot_png": "mock-data/eso/plot.png",
+    "methods_html": "mock-data/eso/methods.html"
+  },
+  "generated_at": "2025-01-12T04:21:34Z"
+}

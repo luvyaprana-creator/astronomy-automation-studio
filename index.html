@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Astronomy Automation Studio</title>
+  <meta name="description" content="Automation studio for astronomy data pipelines, rigorous archives, and observatory operations.">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Astronomy Automation Studio">
+  <meta property="og:description" content="Automation studio for astronomy data pipelines, data plumbing, and ML ops.">
+  <meta property="og:url" content="https://example.com/astronomy-automation-studio">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Astronomy Automation Studio">
+  <meta name="twitter:description" content="Rigorous automation for astronomy data pipelines and operations.">
+  <meta name="twitter:image" content="assets/og-image.png">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="assets/og-image.png" as="image">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar"></div>
+  </div>
+
+  <svg aria-hidden="true" class="icon-sprite">
+    <defs>
+      <linearGradient id="grad-accent" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#7C83FF" />
+        <stop offset="100%" stop-color="#3f59ff" />
+      </linearGradient>
+      <symbol id="icon-rocket" viewBox="0 0 24 24">
+        <path d="M4 13l4-4 3 3 4-4-3-3 4-4 3 3c1.6 1.6 2 5.5-2 9.5-4 4-7.9 3.6-9.5 2l-3-3z" fill="url(#grad-accent)" />
+      </symbol>
+      <symbol id="icon-spark" viewBox="0 0 24 24">
+        <path d="M12 2l1.6 4.4L18 8l-4.4 1.6L12 14l-1.6-4.4L6 8l4.4-1.6z" fill="url(#grad-accent)" />
+      </symbol>
+      <symbol id="icon-download" viewBox="0 0 24 24">
+        <path d="M12 3v10.2l3.6-3.6 1.4 1.4L12 18.4l-5-5 1.4-1.4 3.6 3.6V3h2zM5 19h14v2H5z" fill="currentColor" />
+      </symbol>
+      <symbol id="icon-copy" viewBox="0 0 24 24">
+        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z" fill="currentColor" />
+      </symbol>
+      <symbol id="icon-status" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none" />
+        <path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Astronomy Automation Studio home">
+        <svg class="brand-icon" role="img" aria-hidden="true">
+          <use href="#icon-rocket"></use>
+        </svg>
+        <span>Astronomy Automation Studio</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#capabilities">Capabilities</a></li>
+          <li><a href="#automation-studio">Automation Studio</a></li>
+          <li><a href="#selected-results">Selected Results</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-controls">
+        <label class="demo-toggle">
+          <input type="checkbox" id="demo-mode-toggle" checked aria-label="Toggle demo mode">
+          <span>Demo Mode</span>
+        </label>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" hidden>
+      <ul>
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#automation-studio">Automation Studio</a></li>
+        <li><a href="#selected-results">Selected Results</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="parallax-bg" aria-hidden="true"></div>
+      <div class="container hero-content" data-reveal>
+        <div>
+          <p class="eyebrow">Automation studio</p>
+          <h1 id="hero-title">Astronomy data pipelines, archives, and ops—done rigorously.</h1>
+          <p class="hero-subtitle">Operational tooling for observatory-scale data plumbing, analysis, and reproducibility.</p>
+          <div class="chip-row" role="list">
+            <span class="chip" role="listitem">SQL</span>
+            <span class="chip" role="listitem">Arrow/Parquet</span>
+            <span class="chip" role="listitem">Astropy</span>
+            <span class="chip" role="listitem">CASA</span>
+            <span class="chip" role="listitem">Alert Brokers</span>
+            <span class="chip" role="listitem">Snakemake</span>
+            <span class="chip" role="listitem">DVC</span>
+            <span class="chip" role="listitem">Schema Validation</span>
+            <span class="chip" role="listitem">Reproducible Env</span>
+            <span class="chip" role="listitem">Imbalanced Classification</span>
+            <span class="chip" role="listitem">Uncertainty Calibration</span>
+            <span class="chip" role="listitem">Anomaly Detection</span>
+            <span class="chip" role="listitem">Selection Functions</span>
+            <span class="chip" role="listitem">PSF/Beam Systematics</span>
+            <span class="chip" role="listitem">Photometric Calibration</span>
+            <span class="chip" role="listitem">Rubin/Euclid</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn primary" href="#automation-studio">Open Automation Studio</a>
+            <a class="btn ghost" href="{cv_url}" target="_blank" rel="noopener">View CV</a>
+            <a class="btn outline" href="#contact">Contact</a>
+          </div>
+        </div>
+        <aside class="hero-aside" aria-label="Studio snapshot" data-reveal>
+          <div class="hero-card">
+            <svg class="hero-icon" aria-hidden="true"><use href="#icon-spark"></use></svg>
+            <p>Live instrumentation across JWST, VLT, and ALMA pipelines with reproducible job manifests.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="capabilities" class="section" aria-labelledby="capabilities-title">
+      <div class="container" data-reveal>
+        <h2 id="capabilities-title">Capabilities</h2>
+        <div class="capability-groups">
+          <article class="card" data-reveal>
+            <h3>Data Plumbing</h3>
+            <ul>
+              <li>Archive sync, schema versioning, integrity checks</li>
+              <li>Arrow/Parquet columnar stores, delta ingestion</li>
+              <li>Event-driven orchestration, broker integrations</li>
+            </ul>
+          </article>
+          <article class="card" data-reveal>
+            <h3>Pipelines &amp; Rigor</h3>
+            <ul>
+              <li>Snakemake + DVC lineage with artifact tracking</li>
+              <li>Continuous QA with uncertainty + bias audits</li>
+              <li>Immutable manifests, provenance capture</li>
+            </ul>
+          </article>
+          <article class="card" data-reveal>
+            <h3>Stats &amp; ML</h3>
+            <ul>
+              <li>Classifiers for transient vetting, anomaly flags</li>
+              <li>Uncertainty calibration, imbalanced regimes</li>
+              <li>Simulation-to-observation transfer learning</li>
+            </ul>
+          </article>
+          <article class="card" data-reveal>
+            <h3>Domain Fluency</h3>
+            <ul>
+              <li>JWST NIRCam/NIRSpec, VLT ESPRESSO/X-Shooter</li>
+              <li>ALMA CASA pipelines, Rubin/Euclid survey ops</li>
+              <li>Photometric + spectroscopic calibration systems</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="automation-studio" class="section" aria-labelledby="studio-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="studio-title">Automation Studio</h2>
+          <p class="section-subtitle">Launch pipelines, monitor jobs, and ship artifacts. Demo mode furnishes realistic mock payloads.</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Automation apps">
+          <button role="tab" aria-selected="true" aria-controls="panel-jwst" id="tab-jwst">JWST NIRCam</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-eso" id="tab-eso">ESO VLT</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-alma" id="tab-alma">ALMA Moments</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-recent" id="tab-recent">Recent Jobs</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-ai" id="tab-ai">AI Ops Assistant</button>
+        </div>
+        <div class="tab-panels">
+          <section id="panel-jwst" role="tabpanel" aria-labelledby="tab-jwst">
+            <div class="app-grid">
+              <form class="app-form" id="form-jwst" novalidate data-reveal>
+                <h3>JWST NIRCam Composite + Photometry</h3>
+                <div class="form-grid">
+                  <label>Object / RA
+                    <input type="text" name="objectRa" required placeholder="NGC 3324 / 10:37:20.8 -59:52:01">
+                  </label>
+                  <label>Filters
+                    <input type="text" name="filters" required placeholder="F090W,F200W">
+                  </label>
+                  <label>Cutout size (arcsec)
+                    <input type="number" name="cutout" required min="1" max="600" step="1" value="60">
+                  </label>
+                  <label>Color map
+                    <select name="colorMap" required>
+                      <option value="">Select</option>
+                      <option value="false-color">False Color</option>
+                      <option value="perceptual">Perceptual</option>
+                      <option value="scientific">Scientific</option>
+                    </select>
+                  </label>
+                  <label>Aperture params
+                    <textarea name="aperture" rows="3" placeholder="radius=3.2" required></textarea>
+                  </label>
+                </div>
+                <button type="submit" class="btn primary">Submit Job</button>
+                <p class="form-help">POST /jobs/jwst-nircam → photometry, manifests, and catalog artifacts.</p>
+              </form>
+              <aside class="job-output" aria-live="polite" data-reveal>
+                <div class="job-status" data-app="jwst"></div>
+              </aside>
+            </div>
+          </section>
+
+          <section id="panel-eso" role="tabpanel" aria-labelledby="tab-eso" hidden>
+            <div class="app-grid">
+              <form class="app-form" id="form-eso" novalidate data-reveal>
+                <h3>ESO VLT Spectra → Stellar Parameters</h3>
+                <div class="form-grid">
+                  <label>Target / Program ID
+                    <input type="text" name="targetId" required placeholder="LHS 1140 / 0102.C-0588">
+                  </label>
+                  <label>Wavelength range (Å)
+                    <input type="text" name="wavelength" required placeholder="3800-7800">
+                  </label>
+                  <label>Options
+                    <textarea name="options" rows="3" placeholder="method=SME;grid=PHOENIX" required></textarea>
+                  </label>
+                </div>
+                <button type="submit" class="btn primary">Submit Job</button>
+                <p class="form-help">POST /jobs/eso-vlt-params → parameter tables, plots, and reports.</p>
+              </form>
+              <aside class="job-output" aria-live="polite" data-reveal>
+                <div class="job-status" data-app="eso"></div>
+              </aside>
+            </div>
+          </section>
+
+          <section id="panel-alma" role="tabpanel" aria-labelledby="tab-alma" hidden>
+            <div class="app-grid">
+              <form class="app-form" id="form-alma" novalidate data-reveal>
+                <h3>ALMA Cube → Moment Maps (CASA)</h3>
+                <div class="form-grid">
+                  <label>Cube ID
+                    <input type="text" name="cubeId" required placeholder="2019.1.01234.S">
+                  </label>
+                  <label>Mask threshold
+                    <input type="number" name="mask" required min="0" step="0.1" value="3">
+                  </label>
+                  <label>Selected moments
+                    <input type="text" name="moments" required placeholder="0,1,2">
+                  </label>
+                  <label>Spectral range (km/s)
+                    <input type="text" name="spectral" required placeholder="-150 150">
+                  </label>
+                </div>
+                <button type="submit" class="btn primary">Submit Job</button>
+                <p class="form-help">POST /jobs/alma-moments → FITS, quicklook imagery, CASA logs.</p>
+              </form>
+              <aside class="job-output" aria-live="polite" data-reveal>
+                <div class="job-status" data-app="alma"></div>
+              </aside>
+            </div>
+          </section>
+
+          <section id="panel-recent" role="tabpanel" aria-labelledby="tab-recent" hidden>
+            <div class="recent-jobs" id="recent-jobs" aria-live="polite"></div>
+          </section>
+
+          <section id="panel-ai" role="tabpanel" aria-labelledby="tab-ai" hidden>
+            <div class="ai-assistant" data-reveal>
+              <header>
+                <h3>AI Ops Assistant</h3>
+                <p>Copy prompts tuned for astronomy automation workflows.</p>
+              </header>
+              <div class="prompt-list" role="list">
+                <article class="prompt-card" role="listitem">
+                  <h4>Snakemake + DVC rules</h4>
+                  <p>Generate Snakemake rules + DVC stages for submitted params.</p>
+                  <button class="btn outline copy-prompt" data-prompt="Generate Snakemake rules and DVC stages for the attached astronomy job parameters. Capture inputs, outputs, and provenance, and enforce checksum validation.">Copy prompt</button>
+                </article>
+                <article class="prompt-card" role="listitem">
+                  <h4>Environment.yml</h4>
+                  <p>Draft environment.yml (conda) with pinned versions for Astropy/photutils/astroquery/CASA worker.</p>
+                  <button class="btn outline copy-prompt" data-prompt="Draft a minimal environment.yml for a conda-based worker running Astropy, photutils, astroquery, and CASA. Include pinned versions and system-level dependencies.">Copy prompt</button>
+                </article>
+                <article class="prompt-card" role="listitem">
+                  <h4>Provenance summary</h4>
+                  <p>Summarize provenance &amp; logs into a README.</p>
+                  <button class="btn outline copy-prompt" data-prompt="Summarize the job provenance, execution parameters, and log highlights into a concise README suitable for archive submission.">Copy prompt</button>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="selected-results" class="section" aria-labelledby="results-title">
+      <div class="container" data-reveal>
+        <h2 id="results-title">Selected Results</h2>
+        <div class="result-grid" id="result-grid" aria-live="polite"></div>
+        <div id="results-sentinel" class="results-sentinel" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container about" data-reveal>
+        <div>
+          <h2 id="about-title">About</h2>
+          <p>Luvya builds observatory-scale automation across JWST, ALMA, VLT, Rubin/LSST, and Euclid missions. Focus: clean data plumbing, reproducible science ops, and ML-driven decision support for instrument scientists.</p>
+          <p>Rigorous, practitioner-first delivery spanning calibration pipelines, manifest governance, and statistical tooling that keeps archives honest.</p>
+          <a class="btn ghost" href="{cv_url}" target="_blank" rel="noopener">Download CV</a>
+        </div>
+        <aside data-reveal>
+          <h3>Mission focus</h3>
+          <ul>
+            <li>JWST NIRCam + NIRSpec commissioning + GO cycles</li>
+            <li>ALMA Phase 1/2 QA2 pipelines</li>
+            <li>ESO VLT spectroscopic parameter inference</li>
+            <li>Rubin/LSST alert stream integration</li>
+            <li>Euclid data fusion and validation</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container contact" data-reveal>
+        <div data-reveal>
+          <h2 id="contact-title">Contact</h2>
+          <p>Reach out for collaborations, pipeline hardening, or observatory operations consulting.</p>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:{you@domain}">Email</a>
+            <a class="btn outline" href="https://github.com/{github}" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn outline" href="https://linkedin.com/in/{linkedin}" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate data-reveal>
+          <label>Name
+            <input type="text" name="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+          <label>Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn primary">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+  <button id="scroll-top" class="scroll-top" type="button" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <p>&copy; <span id="current-year"></span> Astronomy Automation Studio.</p>
+      <ul>
+        <li><a href="https://mast.stsci.edu" target="_blank" rel="noopener">STScI / MAST</a></li>
+        <li><a href="https://www.eso.org" target="_blank" rel="noopener">ESO</a></li>
+        <li><a href="https://www.almaobservatory.org" target="_blank" rel="noopener">NRAO / ALMA</a></li>
+        <li><a href="https://casa.nrao.edu" target="_blank" rel="noopener">CASA</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

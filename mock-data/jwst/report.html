@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JWST NIRCam Photometry Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; color: #0b1330; }
+    h1 { color: #2b3a90; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #c5cbe3; padding: 0.5rem; text-align: left; }
+    th { background: #e6e9ff; }
+  </style>
+</head>
+<body>
+  <h1>JWST NIRCam Photometry Report</h1>
+  <p>Target <strong>NGC 3324</strong> processed through nircam_photometry pipeline version 2.4.0.</p>
+  <h2>Highlights</h2>
+  <ul>
+    <li>Median SNR across apertures: 32.4</li>
+    <li>Sources catalogued: 182 detections</li>
+    <li>Flux calibration anchored to JWST CRDS r20250201</li>
+  </ul>
+  <h2>Calibration Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Stage</th>
+        <th>Description</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Detector calibration</td><td>Applied dark + flat reference files</td><td>OK</td></tr>
+      <tr><td>Background subtraction</td><td>2D polynomial + sigma clipping</td><td>OK</td></tr>
+      <tr><td>Photometry</td><td>Photutils circular aperture radius 3.2 px</td><td>OK</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>

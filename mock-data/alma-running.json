@@ -1,0 +1,9 @@
+{
+  "jobId": "alma-demo-running",
+  "status": "Running",
+  "startedAt": "2025-03-02T18:40:12Z",
+  "updatedAt": "2025-03-02T18:43:20Z",
+  "logs": "[18:40:13] Loading CASA measurement set...\n[18:41:44] Running tclean with auto-multithresh...\n[18:43:20] Calculating moment statistics...",
+  "artifacts": [],
+  "public": false
+}

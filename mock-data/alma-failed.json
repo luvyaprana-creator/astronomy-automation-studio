@@ -1,0 +1,10 @@
+{
+  "jobId": "alma-demo-failed",
+  "status": "Failed",
+  "startedAt": "2025-03-02T18:40:12Z",
+  "updatedAt": "2025-03-02T18:42:09Z",
+  "logs": "\u001b[33m[18:40:13]\u001b[0m Loading CASA measurement set...\n\u001b[31m[18:42:09]\u001b[0m tclean diverged: insufficient u-v coverage for mask threshold 7.0.",
+  "error": "tclean diverged",
+  "artifacts": [],
+  "public": false
+}

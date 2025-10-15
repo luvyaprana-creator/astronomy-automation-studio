@@ -1,0 +1,32 @@
+{
+  "observation": {
+    "program": "GO-12345",
+    "target": "NGC 3324",
+    "ra": "10:37:20.8",
+    "dec": "-59:52:01",
+    "filters": ["F090W", "F150W", "F200W"],
+    "instrument": "NIRCam"
+  },
+  "pipeline": {
+    "name": "nircam_photometry",
+    "version": "2.4.0",
+    "executor": "snakemake",
+    "stages": ["fetch_cutouts", "detector_calibration", "aperture_photometry", "catalog_packaging"]
+  },
+  "parameters": {
+    "cutout_size_arcsec": 60,
+    "aperture_radius": 3.2,
+    "color_map": "false-color"
+  },
+  "artifacts": {
+    "preview_png": "mock-data/jwst/preview.png",
+    "catalog_csv": "mock-data/jwst/catalog.csv",
+    "report_html": "mock-data/jwst/report.html"
+  },
+  "checksums": {
+    "preview.png": "sha256-96aa9a4c",
+    "catalog.csv": "sha256-63cb21cc",
+    "report.html": "sha256-a0f4c5e2"
+  },
+  "generated_at": "2025-02-01T12:11:51Z"
+}

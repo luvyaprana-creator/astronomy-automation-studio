@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C83FF" />
+      <stop offset="100%" stop-color="#4c51ff" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0f172a"/>
+  <path d="M32 10l5 13 14 2-10 10 2 15-11-7-11 7 2-15-10-10 14-2z" fill="url(#beam)"/>
+  <path d="M32 6v12" stroke="#a5b4fc" stroke-width="2" stroke-linecap="round"/>
+</svg>

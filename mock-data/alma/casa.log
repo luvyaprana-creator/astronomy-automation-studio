@@ -1,0 +1,5 @@
+2025-03-02 18:40:13 INFO  :: CASA 6.5.1 started
+2025-03-02 18:40:16 INFO  :: importasdm(vis='alma.ms')
+2025-03-02 18:41:44 INFO  :: tclean(threshold='3.5sigma', weighting='briggs')
+2025-03-02 18:45:05 INFO  :: immoments(include='0~2', outfile='moment0.fits')
+2025-03-02 18:47:11 INFO  :: exportfits(fitsimage='moment0.fits')

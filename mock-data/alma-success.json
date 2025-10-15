@@ -1,0 +1,37 @@
+{
+  "jobId": "alma-demo-success",
+  "status": "Succeeded",
+  "startedAt": "2025-03-02T18:40:12Z",
+  "updatedAt": "2025-03-02T18:47:58Z",
+  "completedAt": "2025-03-02T18:47:58Z",
+  "logs": "\u001b[34m[18:40:13]\u001b[0m Loading CASA measurement set...\n\u001b[32m[18:43:05]\u001b[0m Applied mask threshold = 3.5 sigma.\n\u001b[32m[18:47:12]\u001b[0m Exported moment maps [0,1,2] to FITS.",
+  "artifacts": [
+    {
+      "name": "moment0.fits",
+      "url": "mock-data/alma/moment0.fits",
+      "size": 5242880,
+      "type": "application/fits"
+    },
+    {
+      "name": "quicklook.png",
+      "url": "mock-data/alma/quicklook.png",
+      "size": 204800,
+      "type": "image/png"
+    },
+    {
+      "name": "casa.log",
+      "url": "mock-data/alma/casa.log",
+      "size": 8192,
+      "type": "text/plain"
+    }
+  ],
+  "public": true,
+  "report": {
+    "summary": "ALMA cube processed into moment maps with RMS 0.35 mJy/beam.",
+    "metrics": {
+      "moments": [0, 1, 2],
+      "rms_mjy": 0.35
+    }
+  },
+  "summary": "ALMA moment analysis completed with CASA exporting calibrated FITS and quicklook imagery."
+}

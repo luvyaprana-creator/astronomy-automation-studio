@@ -1,0 +1,9 @@
+{
+  "jobId": "jwst-demo-running",
+  "status": "Running",
+  "startedAt": "2025-02-01T12:05:20Z",
+  "updatedAt": "2025-02-01T12:07:45Z",
+  "logs": "[12:05:21] Hydrating reference files...\n[12:06:08] Querying MAST cutouts...\n[12:07:45] Running aperture photometry stage...",
+  "artifacts": [],
+  "public": false
+}
